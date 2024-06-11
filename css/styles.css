@@ -393,6 +393,9 @@ img {
   position: absolute;
   top: 0;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
   color: #f4f4fd;
   padding: 40px 32px;
   background-color: #4d5ae5;
@@ -404,21 +407,27 @@ img {
 .fourth-section-item-title {
   margin-bottom: 8px;
 }
-.fourth-section-item-role {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.footer-container .container {
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
 }
-
 .footer {
   background-color: hwb(237 18% 74%);
   padding: 100px 0;
   margin: 0;
 }
-.footer-container {
-  width: 1158px;
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
+.footer-container-logo {
+  margin-right: 120px;
+}
+.footer-socials-title .container {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 .footer-logo {
   display: inline-block;
@@ -450,14 +459,9 @@ img {
   gap: 16px;
   list-style-type: none;
 }
-
-.footer-socials-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
+.third-section-icons .footer-section-icons {
+  display: flex;
+  gap: 16px;
 }
 .elipse {
   display: flex;
