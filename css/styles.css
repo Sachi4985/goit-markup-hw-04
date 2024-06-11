@@ -49,7 +49,7 @@ img {
 .logo {
   display: flex;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -71,9 +71,15 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  font-weight: 500px;
   list-style-type: none;
 }
 .address-contacts {
+  padding: 24px 0;
+  color: #2e2f42;
+  text-decoration: none;
+}
+.link-nav {
   padding: 24px 0;
   color: #2e2f42;
   text-decoration: none;
@@ -86,16 +92,11 @@ img {
 .address {
   display: flex;
   align-items: center;
-  font-weight: 400;
+  font-weight: 400px;
   font-style: normal;
 }
-.contacts {
-  display: flex;
-  list-style-type: none;
-  gap: 40px;
-}
 .address-contacts {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -244,19 +245,19 @@ img {
   width: calc((100% - 72px) / 4);
 }
 .second-section-item-title {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 20px;
   margin-bottom: 8px;
 }
 .second-section-item-desc {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1.5;
   color: #434455;
 }
 
 .third-section {
-  background-color: #f4f4fd;
+  background-color: #e7e9fc;
   padding: 120px 0;
 }
 .third {
