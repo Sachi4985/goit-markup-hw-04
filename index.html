@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index.html</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="head-container container">
@@ -24,20 +29,22 @@
             >Web<span class="span-header-logo">Studio</span></a
           >
           <ul class="menu-nav">
-            <li><a href="./index.html" class="link-nav">Studio</a></li>
-            <li><a href="#" class="link-nav">Portfolio</a></li>
-            <li><a href="#" class="link-nav">Contacts</a></li>
+            <li><a href="./index.html" class="link-nav link-one">Studio</a></li>
+            <li><a href="#" class="link-nav link-two">Portfolio</a></li>
+            <li><a href="#" class="link-nav link-three">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
           <ul class="contacts">
             <li>
-              <a href="mailto:info@devstudio.com" class="address-contacts"
+              <a
+                href="mailto:info@devstudio.com"
+                class="address-contacts item-address"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="address-contacts"
+              <a href="tel:+110001111111" class="address-contacts item-address"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -47,7 +54,7 @@
     </header>
     <main>
       <section class="first-section">
-        <div class="container">
+        <div class="first container">
           <h1 class="first-section-title">
             Effective Solutions for Your Business
           </h1>
@@ -58,10 +65,15 @@
       </section>
 
       <section class="second-section">
-        <div class="container">
+        <div class="second container">
           <h2 class="visually-hidden">>Section Title</h2>
           <ul class="second-section-list">
             <li class="second-section-item">
+              <div class="secon-section-icons">
+                <svg height="64" width="64" class="icon-Antenna">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="second-section-item-title">Strategy</h3>
               <p class="second-section-item-desc">
                 Our goal is to identify the business problem to walk away with
@@ -69,6 +81,11 @@
               </p>
             </li>
             <li class="second-section-item">
+              <div class="second-section-icons">
+                <svg height="64" width="64" class="icon-Antenna">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="second-section-item-title">Punctuality</h3>
               <p class="second-section-item-desc">
                 Bring the key message to the brand's audience for the best price
@@ -76,6 +93,11 @@
               </p>
             </li>
             <li class="second-section-item">
+              <div class="secon-section-icons">
+                <svg height="64" width="64" class="icon-Antenna">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="second-section-item-title">Diligence</h3>
               <p class="second-section-item-desc">
                 Research and confirm brands that present the strongest digital
@@ -83,6 +105,11 @@
               </p>
             </li>
             <li class="second-section-item">
+              <div class="second-section-icons">
+                <svg height="64" width="64" class="icon-Antenna">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="second-section-item-title">Technologies</h3>
               <p class="second-section-item-desc">
                 Design practice focused on digital experiences. We bring forth a
@@ -93,7 +120,7 @@
         </div>
       </section>
       <section class="third-section">
-        <div class="container">
+        <div class="third container">
           <h2 class="third-section-title">Our Team</h2>
           <ul class="third-section-list">
             <li class="third-section-item">
@@ -106,6 +133,36 @@
               <div class="third-section-content">
                 <h3 class="third-section-item-title">Mark Guerrero</h3>
                 <p class="third-section-item-role">Product Designer</p>
+                <ul class="socials">
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="third-section-item">
@@ -118,6 +175,36 @@
               <div class="third-section-content">
                 <h3 class="third-section-item-title">Tom Ford</h3>
                 <p class="third-section-item-role">Frontend Developer</p>
+                <ul class="socials">
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="third-section-item">
@@ -130,6 +217,36 @@
               <div class="third-section-content">
                 <h3 class="third-section-item-title">Camila Garcia</h3>
                 <p class="third-section-item-role">Marketing</p>
+                <ul class="socials">
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="third-section-item">
@@ -142,6 +259,36 @@
               <div class="third-section-content">
                 <h3 class="third-section-item-title">Daniel Wilson</h3>
                 <p class="third-section-item-role">UI Designer</p>
+                <ul class="socials">
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="third-section-icons">
+                    <a href="" class="elipse-team">
+                      <svg class="elipse-inside" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -152,66 +299,108 @@
           <h2 class="fourth-section-title">Our Portfolio</h2>
           <ul class="fourth-section-list">
             <li class="fourth-section-item">
-              <img
-                src="./images/banking-app.jpg"
-                alt="Banking App"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/banking-app.jpg"
+                  alt="Banking App"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Banking App</h3>
                 <p class="fourth-section-item-role">App</p>
               </div>
             </li>
             <li class="fourth-section-item">
-              <img
-                src="./images/cashles-payment.jpg"
-                alt="Cashless Payment"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/cashles-payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Cashless Payment</h3>
                 <p class="fourth-section-item-role">Marketing</p>
               </div>
             </li>
             <li class="fourth-section-item">
-              <img
-                src="./images/meditation-app.jpg"
-                alt="Meditation App"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/meditation-app.jpg"
+                  alt="Meditation App"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Meditation App</h3>
                 <p class="fourth-section-item-role">App</p>
               </div>
             </li>
             <li class="fourth-section-item">
-              <img
-                src="./images/taxi-service.jpg"
-                alt="Taxi Service"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/taxi-service.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Taxi Service</h3>
                 <p class="fourth-section-item-role">Marketing</p>
               </div>
             </li>
             <li class="fourth-section-item">
-              <img
-                src="./images/screen-illustration.jpg"
-                alt="Screen Illustrations"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/screen-illustration.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Screen Illustrations</h3>
                 <p class="fourth-section-item-role">Design</p>
               </div>
             </li>
             <li class="fourth-section-item">
-              <img
-                src="./images/online-courses.jpg"
-                alt="Online Courses"
-                width="360"
-              />
+              <div class="fourth-section-list-details">
+                <img
+                  src="./images/online-courses.jpg"
+                  alt="Online Courses"
+                  width="360"
+                />
+                <p class="fourth-section-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="fourth-section-content">
                 <h3 class="fourth-section-item-title">Online Courses</h3>
                 <p class="fourth-section-item-role">Marketing</p>
@@ -222,7 +411,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer-containter container">
         <a href="./index.html" class="footer-logo"
           >Web<span class="span-footer-logo">Studio</span></a
         >
@@ -230,6 +419,39 @@
           Increase the flow of customers and sales for your business with
           digital marketing &amp; growth solutions.
         </p>
+      </div>
+      <div>
+        <p class="footer-socials-title">Social media</p>
+        <ul class="footer-socials">
+          <li class="third-section-icons">
+            <a href="" class="elipse">
+              <svg class="elipse-inside" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="third-section-icons">
+            <a href="" class="elipse">
+              <svg class="elipse-inside" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="third-section-icons">
+            <a href="" class="elipse">
+              <svg class="elipse-inside" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="third-section-icons">
+            <a href="" class="elipse">
+              <svg class="elipse-inside" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
