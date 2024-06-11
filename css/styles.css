@@ -142,7 +142,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(/goit-markup-hw-04/images/wpbg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,7 +172,6 @@ img {
   justify-content: center;
   word-wrap: break-word;
   max-width: 496px;
-
   font-size: 56px;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -227,6 +226,15 @@ img {
 }
 .second-section {
   padding: 120px 0;
+}
+.second .container {
+  width: 1128px;
+  height: 104px;
+
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
 }
 .second-section-list {
   display: flex;
